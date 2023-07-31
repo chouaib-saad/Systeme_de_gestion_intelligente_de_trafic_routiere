@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.SmartDrive" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/baseGreen</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+
+
+    <!-- Customize your theme here. -->
+        <style name="login_sigup_theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <!-- Primary brand color. -->
+<!--            action bar color-->
+            <item name="colorPrimary">@color/baseGreen</item>
+
+<!--            //status bar color-->
+            <item name="colorPrimaryVariant">@color/white</item>
+            <!-- Secondary brand color. -->
+<!--            //hedha loun lprogressbar  wel input cursor-->
+            <item name="colorSecondary">@color/baseGreen</item>
+            <item name="colorSecondaryVariant">@color/special_white</item>
+            <item name="colorOnSecondary">@color/myCustomWhite2</item>
+            <item name="textInputOutlinedStyle">@color/green</item>
+<!--            <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>-->
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        </style>
+
+
+
+
+
+
+        <!--    alert dialog transparancy style-->
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+
+    <!--    //my costum rounded circle for image profile-->
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    
+
+
+<!--    //for night mode switch-->
+    <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/night_mode</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+
+    <!--    //for notifictions switch-->
+    <style name="notificationsSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/notifications</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+
+    <!--    //for private account switch-->
+    <style name="privateAccountSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/private_account</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+
+
+    </style>
+
+</resources>

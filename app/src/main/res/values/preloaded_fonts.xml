@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/alegreya_sans</item>
+        <item>@font/amita_bold</item>
+        <item>@font/holtwood_one_sc</item>
+    </array>
+</resources>

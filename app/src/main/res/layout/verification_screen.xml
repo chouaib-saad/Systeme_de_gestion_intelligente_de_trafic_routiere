@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/login_sigup_theme"
+    tools:context=".VerificationScreen">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/verification_logo"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:tint="@color/baseGreen"
+                app:tint="@color/baseGreen"
+                android:foregroundTint="@color/baseGreen"
+                android:backgroundTint="@color/baseGreen"
+                app:layout_constraintStart_toEndOf="@id/start_gl_btn"
+                app:layout_constraintEnd_toStartOf="@id/end_gl_btn"
+                app:layout_constraintBottom_toTopOf="@id/text_view_title"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp"
+                app:lottie_speed="0.8"
+                app:lottie_loop="false"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/user_verification" />
+
+
+
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.01" />
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.23" />
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_gl_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_gl_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top_forum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.42" />
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/juste_une_derniere_etape"
+                android:textColor="@color/baseGreen"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="@id/guide_end"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/guide_txtview" />
+
+
+
+            <TextView
+                android:id="@+id/text_view_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/veuillez_soumettre_les_informations_suivantes_pour_verifier_votre_identite"
+                app:layout_constraintTop_toBottomOf="@id/text_view_title"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintEnd_toEndOf="@id/guide_end"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alegreya_sans"
+                android:textColor="#E0929E0C" />
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profession"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/top_forum"
+                app:tint="@color/baseGreen"
+                app:hintEnabled="true"
+                android:textColorHint="@color/grey"
+                android:hint="Profession"
+                app:boxStrokeColor="@color/baseGreen">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/profession_dropmenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/custom_black"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/custom_job_ic"
+                    android:fontFamily="monospace"
+                    android:drawablePadding="12dp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="16dp"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/myTextView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sans"
+                android:text="@string/description"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/baseRed"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/profession" />
+
+
+            <EditText
+                android:id="@+id/description_field"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_edit"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:gravity="top"
+                android:paddingTop="8dp"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="@string/description_de_la_profession_ici"
+                android:inputType="textMultiLine"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/myTextView2"
+                android:autofillHints="description de la profession ici.." />
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/choose_photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/description_field"
+                android:baselineAligned="false">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/upload_photo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/telecharger_une_photo"
+                    android:textColor="@color/baseRed"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:id="@+id/upload_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_upload_photo"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+
+
+                    <TextView
+                        android:id="@+id/take_photo_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/prendre_une_photo"
+                        android:textColor="@color/baseRed"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+
+                    <ImageView
+                        android:id="@+id/take_btn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/custom_ic_take_photo"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/done_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done"
+                android:layout_marginStart="14dp"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/choose_photo_layout"
+                app:layout_constraintBottom_toBottomOf="@id/choose_photo_layout"
+                app:layout_constraintStart_toEndOf="@id/start_gl_btn"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/done_take"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done"
+                android:layout_marginStart="14dp"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/choose_photo_layout"
+                app:layout_constraintBottom_toBottomOf="@id/choose_photo_layout"
+                app:layout_constraintStart_toEndOf="@id/end_gl_btn"
+                tools:ignore="ContentDescription" />
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/verification_btn"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                app:layout_constraintEnd_toStartOf="@id/end_gl_btn"
+                app:layout_constraintStart_toEndOf="@id/start_gl_btn"
+                app:layout_constraintTop_toBottomOf="@id/choose_photo_layout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/signin_btn_selector"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verifier"
+                    android:animateLayoutChanges="true"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/aldrich"
+                    android:textColor="@color/special_white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/progressbar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="14.5dp"
+                    android:layout_height="14.5dp"
+                    android:animateLayoutChanges="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="26dp"
+                    android:visibility="gone"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/myCustomWhite2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

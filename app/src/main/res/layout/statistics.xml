@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.page.frags.Statistics"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:id="@+id/topBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/statistics_logo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:elevation="5dp"
+            app:lottie_loop="false"
+            app:lottie_speed="0.4"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            android:layout_weight="1"
+            android:contentDescription="Logo"
+            app:lottie_rawRes="@raw/stats_logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistiques_de_trafic"
+            android:fontFamily="@font/aldrich"
+            android:textSize="18sp"
+            android:textColor="@color/green_settings"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topBarContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicatorColor="@color/green_settings"
+        app:tabTextColor="@color/green_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabSelectedTextColor="@color/green_settings"
+        android:contentDescription="tab"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="contentDescription"
+        android:contentDescription="viewPager"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

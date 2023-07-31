@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/userTypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Drive"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/baseGreen"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drawer_list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"/>
+
+
+</LinearLayout>

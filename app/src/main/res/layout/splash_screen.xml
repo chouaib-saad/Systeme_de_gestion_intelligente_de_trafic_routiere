@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashScreen">
+
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="18dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="@color/baseRed"
+        android:visibility="invisible" />
+
+
+    <View
+        android:id="@+id/topView2"
+        android:layout_width="18dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/topView1"
+        android:background="@color/custom_yellow"
+        android:visibility="invisible"
+        />
+
+
+    <View
+        android:id="@+id/topView3"
+        android:layout_width="18dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/topView2"
+        android:background="@color/baseGreen"
+        android:visibility="invisible"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="125dp"
+            android:layout_margin="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:transitionName="logo_transition"
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/baseGreen"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/splash_logo"
+            app:lottie_repeatMode="restart"
+            app:lottie_speed="0.5" />
+
+
+        <LinearLayout
+            android:id="@+id/textLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:transitionName="logo_text_transition"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/baseGreen"
+                android:text="S"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mart"
+                android:textColor="@color/custom_yellow"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textColor="@color/baseRed"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rive"
+                android:textColor="@color/custom_yellow"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/sub_desc"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:transitionName="slogan_transition"
+            android:visibility="invisible"
+            app:fontFamily="sans-serif-smallcaps" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/poweredby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/aldrich"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/isima_logo"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_marginStart="3dp"
+            android:src="@drawable/quetratech_logo"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomView1"
+        android:layout_width="18dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:background="@color/baseRed"
+        android:visibility="invisible"
+        />
+
+
+    <View
+        android:id="@+id/bottomView2"
+        android:layout_width="18dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/bottomView1"
+        android:background="@color/custom_yellow"
+        android:visibility="invisible" />
+
+
+    <View
+        android:id="@+id/bottomView3"
+        android:layout_width="18dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/bottomView2"
+        android:background="@color/baseGreen"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

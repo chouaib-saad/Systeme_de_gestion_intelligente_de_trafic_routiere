@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:theme="@style/login_sigup_theme"
+    tools:context=".Signup">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.015" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.26" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_txtview_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="313dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_gl_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.27" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_gl_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.73" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/progressbar_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.99" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="65dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toTopOf="@id/guide_txtview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guide_line_logo">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/login_signup_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="contentDescription"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/signup_logo"
+                    app:lottie_repeatMode="restart"
+                    app:lottie_speed="1" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/log_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:elevation="10dp"
+                android:onClick="returnBtn"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="contentDescription" />
+
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/cr_er_un_compte"
+                android:textColor="@color/baseGreen"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guide_txtview" />
+
+
+            <TextView
+                android:id="@+id/myTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sans"
+                android:text="@string/name"
+                android:textColor="@color/baseRed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/guide_txtview_fields" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_edit"
+                android:drawableStart="@drawable/custom_user_ic"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/enter_your_name"
+                android:inputType="text"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/myTextView"
+                android:autofillHints="" />
+
+
+            <TextView
+                android:id="@+id/myTextView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/alegreya_sans"
+                android:text="@string/email"
+                android:textColor="@color/baseRed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/name_field" />
+
+            <EditText
+                android:id="@+id/email_field"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_edit"
+                android:drawableStart="@drawable/custom_email_ic"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/enter_your_email"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/myTextView2"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/myTextView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/alegreya_sans"
+                android:text="@string/password"
+                android:textColor="@color/baseRed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/email_field" />
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_edit"
+                android:drawableStart="@drawable/custom_lock_ic"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/myTextView3"
+                android:autofillHints="" />
+
+
+            <TextView
+                android:id="@+id/myTextView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/alegreya_sans"
+                android:text="@string/confirm_password"
+                android:textColor="@color/baseRed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/password_field" />
+
+            <EditText
+                android:id="@+id/retype_password_field"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_edit"
+                android:drawableStart="@drawable/custom_retype_ic"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/retype_your_password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/myTextView4"
+                android:autofillHints="" />
+
+
+            <TextView
+                android:id="@+id/myTextView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/alegreya_sans"
+                android:text="@string/phone"
+                android:textColor="@color/baseRed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/retype_password_field" />
+
+            <EditText
+                android:id="@+id/phone_field"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_edit"
+                android:drawableStart="@drawable/custom_phone_ic"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/enter_your_phone_number"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/custom_black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/myTextView5"
+                tools:ignore="TextFields" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropDownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintEnd_toStartOf="@id/guide_end"
+                app:layout_constraintStart_toEndOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/phone_field"
+                app:tint="@color/baseGreen"
+                app:hintEnabled="true"
+                android:textColorHint="@color/grey"
+                android:hint="type d'utilisateur"
+                app:boxStrokeColor="@color/baseGreen">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/accessLevelType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/custom_black"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/custom_ic_access_level"
+                    android:fontFamily="monospace"
+                    android:drawablePadding="12dp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="16dp"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/agree_terms"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/baseGreen"
+                android:fontFamily="@font/alegreya_sans"
+                android:gravity="center_vertical"
+                android:text="@string/i_agree_with_the_terms_of_services_and_privacy_policy"
+                android:textColor="@color/baseGreen"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/dropDownMenu" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/signup_btn"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/signin_btn_selector"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/end_gl_btn"
+                app:layout_constraintStart_toEndOf="@id/start_gl_btn"
+                android:animateLayoutChanges="true"
+                app:layout_constraintTop_toBottomOf="@id/agree_terms">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CREER"
+                    android:textColor="@color/special_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:animateLayoutChanges="true"
+                    android:fontFamily="@font/aldrich"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/progressbar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginHorizontal="34dp"
+                    android:animateLayoutChanges="true"
+                    android:visibility="gone"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/myCustomWhite2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.page.frags.UserProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userProfilLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidePictureEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.956"
+            android:orientation="vertical"/>
+
+
+    <LinearLayout
+        android:id="@+id/coverLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dataLayout"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/profileshape"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal">
+
+
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userPicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:strokeColor="#C9FFFFFF"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/myCustomWhite"
+            android:layout_marginBottom="7dp"/>
+
+        <TextView
+            android:id="@+id/profession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/myCustomWhite"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_notifications"
+                android:textColor="@color/myCustomWhite"
+                android:textSize="13sp"
+                android:padding="15dp"/>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/myCustomWhite" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_avertissement"
+                android:textColor="@color/myCustomWhite"
+                android:textSize="13sp"
+                android:padding="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dataLayout"
+        android:layout_weight="1.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintTop_toBottomOf="@id/coverLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="contentDescription"
+                android:src="@drawable/ic_user_focused"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nom_d_utilisateur"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/green_settings"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/userName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/baseGreen"
+            android:layout_marginVertical="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="contentDescription"
+                android:src="@drawable/ic_email_focused" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adresse_email"
+                android:textStyle="bold"
+                android:textColor="@color/green_settings"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/baseGreen"
+            android:layout_marginVertical="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="contentDescription"
+                android:src="@drawable/ic_phone_focused"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone"
+                android:textStyle="bold"
+                android:textColor="@color/green_settings"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/baseGreen"
+            android:layout_marginVertical="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="contentDescription"
+                android:src="@drawable/ic_user_type" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_utilisateur"
+                android:textStyle="bold"
+                android:textColor="@color/green_settings"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/userType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/baseGreen"
+            android:layout_marginVertical="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_user_acc_lvl_focused"
+                tools:ignore="contentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/etat_de_profil"
+                android:textStyle="bold"
+                android:textColor="@color/green_settings"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+        <TextView
+            android:id="@+id/profileState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/verifMark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:paddingBottom="5dp"
+            tools:ignore="contentDescription"
+            android:src="@drawable/ic_done"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/baseGreen"
+            android:layout_marginVertical="16dp"/>
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/editProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/guidePictureEdit"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="9dp"
+            tools:ignore="contentDescription"
+            android:src="@drawable/ic_edit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

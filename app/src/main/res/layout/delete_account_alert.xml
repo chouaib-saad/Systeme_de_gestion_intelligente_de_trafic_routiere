@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="220dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:animateLayoutChanges="true"
+    android:theme="@style/login_sigup_theme">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="avertissement : vous perdrez définitivement tous vosinformations après cela, il n'y a pas de retour en arrière"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="18dp"
+            android:fontFamily="@font/alegreya_sans"
+            android:textColor="@color/baseRed"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="18dp" />
+
+
+
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_edit"
+            android:drawableStart="@drawable/custom_lock_ic"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:fontFamily="@font/alegreya_sans"
+            android:hint="Tapez votre  mot de passe.."
+            android:inputType="textPassword"
+            android:paddingHorizontal="14dp"
+            android:layout_marginHorizontal="16dp"
+            android:textColor="@color/custom_black"
+            android:textColorHint="@color/grey"
+            android:layout_marginBottom="18dp"
+            android:textSize="13sp"
+            android:autofillHints="password" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/confirmer_button"
+            android:layout_width="145dp"
+            android:layout_height="35dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/signin_btn_selector"
+            android:elevation="5dp"
+            android:layout_gravity="center_horizontal">
+
+
+
+            <TextView
+                android:id="@+id/confirmer_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONFIRMER"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:animateLayoutChanges="true"
+                android:fontFamily="@font/aldrich"
+                android:textColor="@color/special_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/progressbar1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <ProgressBar
+                android:id="@+id/progressbar1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:indeterminateTint="@color/myCustomWhite2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="18dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/annuler_button"
+                android:layout_width="145dp"
+                android:layout_height="35dp"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/signin_btn_selector"
+                android:elevation="5dp"
+                android:layout_gravity="center_horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btn_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANNULER"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:animateLayoutChanges="true"
+                    android:fontFamily="@font/aldrich"
+                    android:textColor="@color/special_white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/progressbar2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:animateLayoutChanges="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:indeterminateTint="@color/myCustomWhite2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="18dp"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

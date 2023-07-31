@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/login_sigup_theme"
+    tools:context=".SigninSignup"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:id="@+id/log_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        tools:ignore="contentDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:onClick="exit_btn"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.035" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_gl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_gl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_gl_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_gl_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_txtview_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        android:layout_marginHorizontal="28sp"
+        app:layout_constraintTop_toBottomOf="@id/guide_line_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:scaleType="centerCrop"
+            android:transitionName="logo_transition"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/baseGreen"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/splash_logo"
+            app:lottie_repeatMode="restart"
+            app:lottie_speed="0.5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_title"
+        app:layout_constraintTop_toBottomOf="@id/guide_txtview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        android:textColor="@color/baseGreen"
+        android:textStyle="bold"
+        android:transitionName="logo_text_transition"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_desc_2"
+        app:layout_constraintTop_toBottomOf="@id/guide_txtview_desc"
+        app:layout_constraintStart_toStartOf="@id/start_gl_btn"
+        app:layout_constraintEnd_toEndOf="@id/end_gl_btn"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/custom_yellow"
+        android:transitionName="slogan_transition"
+        />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toEndOf="@id/start_gl_btn"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintEnd_toStartOf="@id/end_gl_btn"
+        app:layout_constraintTop_toBottomOf="@id/guide_btns"
+        android:background="@drawable/signin_btn_selector"
+        android:elevation="5dp"
+        android:onClick="signin_btn">
+        <TextView
+            android:id="@+id/signinTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connexion2"
+            android:textSize="20sp"
+            android:textColor="@color/special_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/signup_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintStart_toEndOf="@id/start_gl_btn"
+        app:layout_constraintEnd_toStartOf="@id/end_gl_btn"
+        app:layout_constraintTop_toBottomOf="@id/login_btn"
+        android:background="@drawable/signup_btn_selector"
+        android:layout_marginTop="32dp"
+        android:elevation="5dp"
+        android:onClick="sigup_btn">
+        <TextView
+            android:id="@+id/signup_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cr_er_un_compte2"
+            android:textSize="20sp"
+            android:textColor="#E8BC120C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

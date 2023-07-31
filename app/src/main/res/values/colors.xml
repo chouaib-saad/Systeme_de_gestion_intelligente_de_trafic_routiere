@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+
+<!--    special white-->
+    <color name="special_white">#EBFCFB</color>
+    <color name="customBlack">#221F1F</color>
+    <color name="darker_Gray">#C9404040</color>
+    <color name="btn_white">#AEFFFFFF</color>
+    <color name="myCustomWhite">#C4FFFFFF</color>
+    <color name="myCustomWhite2">#7AFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="baseRed">#E8BC120C</color>
+    <color name="baseGreen">#F3068125</color>
+    <color name="grey">#828282</color>
+    <color name="customGreen">#8B068125</color>
+
+
+
+
+
+    <!--    wa9ti-->
+    <color name="bgBlue">#41348A</color>
+
+
+
+
+    <!--    error colors-->
+    <color name="green">#CE15AA15</color>
+    <color name="red">#DDFF2600</color>
+    <color name="custom_yellow">#E1929E0C</color>
+    <color name="custom_black">#B20E0E0E</color>
+    <color name="customRed">#E8BCBC</color>
+    <color name="golden_yellow">#9CFBC603</color>
+    <color name="pressed_red">#E8830803</color>
+
+
+
+    <!--    temporary colors-->
+    <color name="primary">#1B023B</color>
+    <color name="secondary">#FF03DAC5</color>
+
+    <color name="night_mode">#6124B1</color>
+    <color name="notifications">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#D95F69</color>
+    <color name="almost_tranparent">#1AFFFFFF</color>
+    <color name="base_grey">#9E404040</color>
+    <color name="green_settings">#CD37884C</color>
+    <color name="green_transparent">#6A37884C</color>
+    <color name="green_transparent2">#2200FF00</color>
+    <color name="lavender">#8692f7</color>
+
+
+
+    <!--    chart colors-->
+    <color name="chartGreen">#239023</color>
+    <color name="chartGreen2">#28a428</color>
+    <color name="chartBlue">#2db92d</color>
+    <color name="chartYellow">#1e7b1e</color>
+
+    <!--    gold color-->
+    <color name="gold_color">#DAA520</color>
+    <color name="color_marker">#FFC940</color>
+
+    <color name="uncelected_slider_color">#D7B5ADAD</color>
+
+
+<!--    <color name="chartGreen">#EB038803</color>-->
+<!--    <color name="chartRed">#DDF12C0A</color>-->
+<!--    <color name="chartBlue">#E10751AA</color>-->
+<!--    <color name="chartYellow">#F7C5E90E</color>-->
+
+
+
+</resources>

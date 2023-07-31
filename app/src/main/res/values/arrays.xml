@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string-array name="id_activityVipTitles">
+
+        <item></item>
+        <item>Accueil</item>
+        <item>Acces VIP</item>
+        <item>Informations</item>
+        <item>Smart Feux</item>
+        <item>Statistiques</item>
+        <item>Conditions</item>
+        <item>Parametres</item>
+        <item/>
+        <item>Deconnexion</item>
+
+    </string-array>
+
+
+    <array name="id_activityVipIcons">
+
+        <item>@drawable/ic_close</item>
+        <item>@drawable/home_item</item>
+        <item>@drawable/accesvip_item</item>
+        <item>@drawable/informations_item</item>
+        <item>@drawable/smartfeux_item</item>
+        <item>@drawable/statistics_item</item>
+        <item>@drawable/conditions_utilisation_item</item>
+        <item>@drawable/settings_item</item>
+        <item>0</item>
+        <item>@drawable/logout_item</item>
+
+    </array>
+
+
+    <string-array name="id_activityUserTitles">
+
+        <item></item>
+        <item>Accueil</item>
+        <item>Informations</item>
+        <item>Smart Feux</item>
+        <item>Statistiques</item>
+        <item>Conditions</item>
+        <item>Parametres</item>
+        <item/>
+        <item>Deconnexion</item>
+
+    </string-array>
+
+
+    <array name="id_activityUserIcons">
+
+        <item>@drawable/ic_close</item>
+        <item>@drawable/home_item</item>
+        <item>@drawable/informations_item</item>
+        <item>@drawable/smartfeux_item</item>
+        <item>@drawable/statistics_item</item>
+        <item>@drawable/conditions_utilisation_item</item>
+        <item>@drawable/settings_item</item>
+        <item>0</item>
+        <item>@drawable/logout_item</item>
+
+    </array>
+
+</resources>

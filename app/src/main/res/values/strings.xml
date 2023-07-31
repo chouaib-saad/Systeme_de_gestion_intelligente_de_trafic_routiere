@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">SmartDrive</string>
+
+
+    <!--    network problem dialog string-->
+    <string name="you_re_offline_please_check_your_network_connection">Vous êtes hors ligne, veuillez vérifier votre connexion réseau</string>
+    <string name="try_again">RÉESSAYER</string>
+
+
+    <!--    signup/signin fields strings-->
+    <string name="enter_your_phone_number">numéro de téléphone…</string>
+    <string name="enter_your_password">Tapez votre mot de passe…</string>
+    <string name="remember_me">SOUVIENS-MOI</string>
+    <string name="forget_password">MOT DE PASSE OUBLIÉ ?</string>
+    <string name="sign_in_with_google">CONNEXION AVEC GOOGLE</string>
+    <string name="name">nom et prenom</string>
+    <string name="enter_your_name">Entrez votre nom…</string>
+    <string name="enter_your_email">Entrer votre Email…</string>
+    <string name="email">e-mail</string>
+    <string name="confirm_password">confirmez le mot de passe</string>
+    <string name="i_agree_with_the_terms_of_services_and_privacy_policy">j\'accepte les conditions d\'utilisation et la politique de confidentialité</string>
+    <string name="phone">telephone</string>
+    <string name="password">mot de passe</string>
+    <string name="retype_your_password">re-taper le mot de passe…</string>
+
+
+    <!--    main screen admin/user strings-->
+    <string name="bonjour_user">Bonjour utilisateur</string>
+
+    <!--    splash screen strings-->
+    <string name="splash_title">Bienvenue au SmartDrive</string>
+    <string name="sub_desc">meilleure qualite de conduite</string>
+    <string name="sub_desc_2">vous faciliter la vie !</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Connexion ou Inscription</string>
+    <string name="action_sign_in_short">S\'identifier</string>
+    <string name="welcome">"Bienvenu !"</string>
+    <string name="invalid_username">Nom d\'utilisateur non valide</string>
+    <string name="invalid_password">Le mot de passe doit contenir plus de 5 caractères</string>
+    <string name="login_failed">"échec de la connexion"</string>
+
+
+    <string-array name="userAccessLevelOptions">
+        <item>Utilisateur Regulier</item>
+        <item>Utilisateur VIP</item>
+    </string-array>
+
+
+
+    <!--list of vip professions-->
+    <string-array name="profession_list">
+        <item>Policier</item>
+        <item>Ambulancier</item>
+        <item>Pompier</item>
+        <item>Protection civile</item>
+        <item>Personnalite politique</item>
+        <item>Autre..</item>
+    </string-array>
+
+
+    <!--some fragments titles-->
+    <string name="title_activity_done_screen">DoneScreen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="connexion">Connexion</string>
+    <string name="mode_nuit">Mode nuit</string>
+    <string name="notifications">Notifications</string>
+    <string name="compte_prive">Compte prive</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="supprimer_compte">supprimer compte</string>
+    <string name="languages">Languages</string>
+    <string name="votre_documents">Votre documents</string>
+    <string name="contact_us">Contactez-nous</string>
+    <string name="faqs">FAQs</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="reinitialiser_votre_mot_de_passe">Reinitialiser votre mot de passe</string>
+    <string name="pour_reinitialiser_votre_mot_de_passe_veuillez_tapez_votre_adresse_e_mail">pour reinitialiser votre mot de passe, veuillez tapez votre adresse e-mail :</string>
+    <string name="reinitialiser">Reinitialiser</string>
+    <string name="informations_sur_les_embouteillages">Informations sur les embouteillages</string>
+    <string name="veuillez_choisir_votre_chemin">Veuillez choisir votre chemin !</string>
+    <string name="la_route_sera_ouverte_apres">La route sera ouverte apres :</string>
+    <string name="annuler">ANNULER</string>
+    <string name="bienvenue_dans">Bienvenue dans,</string>
+    <string name="nom_utilisateur">Nom utilisateur</string>
+    <string name="smartdrive">SmartDrive!</string>
+    <string name="mode_d_emploi">mode d\'emploi</string>
+    <string name="vous_pouvez_ouvrir_la_carte_pour_voir_le_plus_proche_feux_de_vous_n_vous_pouvez_activer_le_mode_d_urgence_si_vous_etes_un_utilisateur_160_160_special_n_vous_pouvez_afficher_et_voir_les_statistiques_de_congestion_du_160_160_trafic_a_partir_de_l_interface_de_statistiques_n_vous_pouvez_voir_le_nombre_de_voitures_sur_chaque_route_en_160_160_temps_reel_dans_le_systeme_de_feux_de_circulation_intelligents_via_160_160_l_interface_informations"><![CDATA[- vous pouvez ouvrir la carte pour voir le plus proche feux de vous.\n- vous pouvez activer le mode d\'urgence si vous etes un utilisateur   special.\n - vous pouvez afficher et voir les statistiques de congestion du   trafic a partir de l\'interface de statistiques\n - vous pouvez voir le nombre de voitures sur chaque route en   temps reel dans le systeme de feux de circulation intelligents via   l\'interface informations.]]></string>
+    <string name="se_connecter">SE CONNECTER</string>
+    <string name="s_inscrire">s\'inscrire</string>
+    <string name="modifier_profile">Modifier Profile</string>
+    <string name="connexion2">connexion</string>
+    <string name="cr_er_un_compte">Créer un compte</string>
+    <string name="statistiques_de_trafic">Statistiques de trafic</string>
+    <string name="conditions_d_utilisation">Conditions d\'utilisation</string>
+    <string name="_1_introduction">1- introduction</string>
+    <string name="les_pr_sentes_conditions_d_utilisation_r_gissent_l_utilisation_de_l_application_mobile_de_contr_le_de_feux_de_signalisation_intelligents_ci_apr_s_d_nomm_e_quot_smartdrive_quot_d_velopp_e_par_quot_quetratech_quot_nl_utilisation_de_l_application_implique_l_acceptation_de_ces_conditions_d_utilisation_dans_leur_int_gralit">Les présentes conditions d\'utilisation régissent l\'utilisation de l\'application mobile de contrôle de feux de signalisation intelligents (ci-après dénommée \"SmartDrive\") développée par \"Quetratech\".\nL\'utilisation de l\'application implique l\'acceptation de ces conditions d\'utilisation dans leur intégralité.</string>
+    <string name="_2_utilisation_de_l_application">2- utilisation de l\'application</string>
+    <string name="l_utilisateur_reconna_t_que_l_application_est_destin_e_tre_utilis_e_exclusivement_des_fins_professionnelles_ou_pour_la_surveillance_de_la_circulation_ntoute_utilisation_non_autoris_e_de_l_application_est_interdite_nl_utilisateur_est_enti_rement_responsable_de_toutes_les_donn_es_qu_il_envoie_ou_re_oit_via_l_application_nl_utilisateur_doit_s_assurer_que_toutes_les_donn_es_transmises_via_l_application_sont_exactes_et_ne_violent_pas_les_droits_de_tiers">L\'utilisateur reconnaît que l\'application est destinée à être utilisée exclusivement à des fins professionnelles ou pour la surveillance de la circulation.\nToute utilisation non autorisée de l\'application est interdite.\nL\'utilisateur est entièrement responsable de toutes les données qu\'il envoie ou reçoit via l\'application.\nL\'utilisateur doit s\'assurer que toutes les données transmises via l\'application sont exactes et ne violent pas les droits de tiers.</string>
+    <string name="_3_propri_t_intellectuelle">3- propriété intellectuelle</string>
+    <string name="l_application_ainsi_que_tous_les_droits_de_propri_t_intellectuelle_y_aff_rents_demeurent_la_propri_t_exclusive_de_quot_quetratech_quot_nl_utilisateur_ne_dispose_d_aucun_droit_de_propri_t_intellectuelle_sur_l_application_nl_utilisateur_ne_peut_pas_reproduire_modifier_distribuer_ou_exploiter_de_quelque_mani_re_que_ce_soit_l_application_sans_l_autorisation_pr_alable_crite_de_quot_quetratech_quot">L\'application, ainsi que tous les droits de propriété intellectuelle y afférents, demeurent la propriété exclusive de \"Quetratech\".\nL\'utilisateur ne dispose d\'aucun droit de propriété intellectuelle sur l\'application.\nL\'utilisateur ne peut pas reproduire, modifier, distribuer ou exploiter de quelque manière que ce soit l\'application sans l\'autorisation préalable écrite de \"Quetratech\".</string>
+    <string name="_4_confidentialit_et_protection_des_donn_es">4- confidentialité et protection des données</string>
+    <string name="l_utilisateur_reconna_t_que_l_application_collecte_des_donn_es_relatives_l_utilisation_de_l_application_notamment_des_informations_de_localisation_n_quot_quetratech_quot_respecte_la_l_gislation_applicable_en_mati_re_de_protection_des_donn_es_et_s_engage_traiter_ces_donn_es_conform_ment_sa_politique_de_confidentialit_nl_utilisateur_est_tenu_de_maintenir_la_confidentialit_de_ses_informations_de_connexion_et_de_prendre_toutes_les_mesures_raisonnables_pour_emp_cher_l_utilisation_non_autoris_e_de_l_application">L\'utilisateur reconnaît que l\'application collecte des données relatives à l\'utilisation de l\'application, notamment des informations de localisation.\n\"Quetratech\" respecte la législation applicable en matière de protection des données et s\'engage à traiter ces données conformément à sa politique de confidentialité.\nL\'utilisateur est tenu de maintenir la confidentialité de ses informations de connexion et de prendre toutes les mesures raisonnables pour empêcher l\'utilisation non autorisée de l\'application.</string>
+    <string name="_5_limitation_de_responsabilit">5- limitation de responsabilité</string>
+    <string name="l_utilisation_de_l_application_se_fait_aux_risques_et_p_rils_de_l_utilisateur_n_quot_quetratech_quot_ne_peut_tre_tenue_responsable_de_tout_dommage_r_sultant_de_l_utilisation_de_l_application_y_compris_sans_limitation_les_dommages_directs_ou_indirects_la_perte_de_profits_la_perte_de_donn_es_ou_toute_autre_perte_conomique">L\'utilisation de l\'application se fait aux risques et périls de l\'utilisateur.\n\"Quetratech\" ne peut être tenue responsable de tout dommage résultant de l\'utilisation de l\'application, y compris sans limitation, les dommages directs ou indirects, la perte de profits, la perte de données ou toute autre perte économique.</string>
+    <string name="_6_modifications_des_conditions_d_utilisation">6- modifications des conditions d\'utilisation</string>
+    <string name="n_quot_quetratech_quot_se_r_serve_le_droit_de_modifier_les_pr_sentes_conditions_d_utilisation_tout_moment_et_sans_pr_avis_nl_utilisateur_est_tenu_de_consulter_r_guli_rement_les_conditions_d_utilisation_pour_prendre_connaissance_des_modifications_ventuelles">\n\"Quetratech\" se réserve le droit de modifier les présentes conditions d\'utilisation à tout moment et sans préavis.\nL\'utilisateur est tenu de consulter régulièrement les conditions d\'utilisation pour prendre connaissance des modifications éventuelles.</string>
+    <string name="_7_droit_applicable_et_juridiction_comp_tente">7- Droit applicable et juridiction compétente</string>
+    <string name="les_pr_sentes_conditions_d_utilisation_sont_r_gies_par_le_droit_tunisien_ntout_litige_relatif_l_interpr_tation_ou_l_ex_cution_des_pr_sentes_conditions_d_utilisation_sera_port_devant_les_tribunaux_comp_tents_de_tunis">Les présentes conditions d\'utilisation sont régies par le droit tunisien.\nTout litige relatif à l\'interprétation ou à l\'exécution des présentes conditions d\'utilisation sera porté devant les tribunaux compétents de Tunis.</string>
+    <string name="vos_documents">vos documents</string>
+    <string name="votre_profession">votre profession</string>
+    <string name="description_de_votre_profession">description de votre profession</string>
+    <string name="document">document</string>
+    <string name="pas_de_documents_disponibles">pas de documents disponibles !</string>
+    <string name="_0_notifications">0 notifications</string>
+    <string name="_0_avertissement">0 avertissement</string>
+    <string name="nom_d_utilisateur">nom d\'utilisateur</string>
+    <string name="adresse_email">Adresse email</string>
+    <string name="telephone">Telephone</string>
+    <string name="type_utilisateur">Type utilisateur</string>
+    <string name="etat_de_profil">Etat de profil</string>
+    <string name="juste_une_derniere_etape">Juste une derniere etape</string>
+    <string name="veuillez_soumettre_les_informations_suivantes_pour_verifier_votre_identite">veuillez soumettre les informations suivantes pour verifier votre identite</string>
+    <string name="description">description</string>
+    <string name="description_de_la_profession_ici">description de la profession ici..</string>
+    <string name="telecharger_une_photo">telecharger une photo</string>
+    <string name="prendre_une_photo">prendre une photo</string>
+    <string name="verifier">verifier</string>
+    <string name="le_champ_ne_peut_pas_tre_vide">le champ ne peut pas être vide</string>
+    <string name="l_email_n_est_pas_valide">L\'email n\'est pas valide</string>
+    <string name="compte_temporairement_bloqu">compte temporairement bloqué</string>
+    <string name="email_non_enregistr">email non enregistré</string>
+    <string name="avertissement">Avertissement</string>
+    <string name="d_accord">D\'accord</string>
+    <string name="already_registred">already registred</string>
+    <string name="mot_de_passe_incorrect">mot de passe incorrect</string>
+    <string name="un_erreur_ce_produit">un erreur ce produit</string>
+    <string name="l_email_est_d_j_utilis">l\'email est déjà utilisé</string>
+    <string name="veuillez_accepter_les_conditions_d_utilisation_et_la_politique_de_confidentialit">Veuillez accepter les conditions d\'utilisation et la politique de confidentialité</string>
+    <string name="choisir_un_type_s_il_vous_plait">choisir un type s\'il vous plait</string>
+    <string name="le_nom_est_trop_court">Le nom est trop court</string>
+    <string name="le_mot_de_passe_est_trop_faible">le mot de passe est trop faible</string>
+    <string name="les_mots_de_passe_ne_correspondent_pas">Les mots de passe ne correspondent pas</string>
+    <string name="num_ro_de_t_l_phone_invalide">Numéro de téléphone invalide</string>
+    <string name="veuillez_s_lectionner_une_profession">veuillez sélectionner une profession</string>
+    <string name="veuillez_s_lectionner_une_photo">veuillez sélectionner une photo</string>
+    <string name="l_ancien_mot_de_passe_est_incorrect">L\'ancien mot de passe est incorrect</string>
+    <string name="impossible_de_modifier_le_mot_de_passe">Impossible de modifier le mot de passe</string>
+    <string name="mot_de_passe_changee_avec_succes">Mot de passe changee avec succes</string>
+    <string name="email_non_enregistre">email non enregistre</string>
+    <string name="cr_er_un_compte2">créer un compte</string>
+
+
+    <!--default web client id for google sign in (deja dans values)-->
+<!--    <string name="default_web_client_id">770943771707-t3lfcpj82ck85g4t433nge5u0hnfbbqa.apps.googleusercontent.com</string>-->
+
+
+</resources>

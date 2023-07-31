@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.page.frags.Faqs">
+
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="questions frequement posees"
+            android:textColor="@color/green_settings"
+            android:textSize="18dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/aldrich" />
+
+
+        <!--  cardview1  -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:animateLayoutChanges="true"
+            app:cardElevation="3dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qu'est-ce que SmartDrive ?"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="2dp"
+                    android:fontFamily="@font/aldrich"
+                    android:textColor="@color/green_settings"/>
+
+                <TextView
+                    android:id="@+id/textview1_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="SmartDrive est une application de système intelligent de contrôle de la circulation qui utilise des cameras de trafic pour détecter le nombre de voitures dans chaque direction et allume les feux de signalisation pour la direction la plus fréquentée.\nL'application vous permet également de surveiller l'état du trafic en temps réel et de contrôler manuellement les lumières de circulation si nécessaire (en cas d'urgnece) ."
+                    android:textSize="12sp"
+                    android:lineSpacingExtra="2dp"
+                    android:visibility="visible"
+                    android:textColor="@color/base_grey" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview2  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:animateLayoutChanges="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview1"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Est-ce que SmartDrive fonctionne partout ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview2_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="SmartDrive peut être utilisé dans les zones où le système de contrôle de la circulation intelligent est installé.\nVous pouvez vérifier si votre zone est couverte en utilisant l'application et en consultant la carte (cliquez sur &quot;smart feux&quot; dans le menu)."
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview3  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview2"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment puis-je signaler un problème avec SmartDrive ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview3_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textSize="12sp"
+                        android:text="Si vous rencontrez un problème avec SmartDrive, vous pouvez contacter le service d'assistance technique via l'application ou par téléphone pour obtenir de l'aide.\nLes techniciens peuvent diagnostiquer les problèmes à distance et fournir des solutions."
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview4  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview3"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment puis-je utiliser l'application pour contrôler les lumières de circulation ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview4_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="L'application vous permet de surveiller l'état du trafic en temps réel et de contrôler manuellement les lumières de circulation si nécessaire.\nVous pouvez également configurer des horaires pour les lumières de circulation et ajuster les paramètres du système."
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview5  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview4"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Le système fonctionne-t-il 24h/24 et 7j/7 ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview5_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Oui, le système fonctionne 24h/24 et 7j/7 pour assurer une circulation fluide et sûre dans la zone couverte."
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview6  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview5"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quels sont les avantages de ce système de contrôle de la circulation intelligente ? "
+                        android:lineSpacingExtra="2dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview6_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Les avantages du système de contrôle de la circulation intelligente comprennent une circulation plus fluide, une réduction des temps d'attente et des temps de trajet plus courts pour les conducteurs, ainsi qu'une amélioration de la sécurité routière."
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview7  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview6"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment puis-je installer le système de contrôle de la circulation intelligente dans ma zone ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview7_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Pour installer le système de contrôle de la circulation intelligente, vous devez contacter un installateur agréé pour effectuer une évaluation de la zone et déterminer les besoins en matière de capteurs de trafic et de systèmes de signalisation.\nUne fois l'installation terminée, vous pouvez utiliser l'application pour contrôler le système."
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview8  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview7"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Est-ce que le système utilise beaucoup d'énergie ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview8_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Le système de contrôle de la circulation intelligente est conçu pour être économe en énergie et utilise des capteurs à faible consommation d'énergie pour détecter le trafic.\nLe système peut être alimenté par l'énergie solaire ou par une source d'alimentation électrique standard."
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  cardview9  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardElevation="3dp"
+                app:contentPadding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment puis-je télécharger SmartDrive ?"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/green_settings"/>
+
+                    <TextView
+                        android:id="@+id/textview9_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textSize="12sp"
+                        android:text="Vous pouvez télécharger SmartDrive depuis le Google Play Store pour les utilisateurs d'Android (une version sera bientot disponible pour les utilisateurs d'iphone)."
+                        android:lineSpacingExtra="2dp"
+                        android:visibility="gone"
+                        android:textColor="@color/base_grey" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

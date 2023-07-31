@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "770943771707",
+    "firebase_url": "https://smartdrive-b9b8e-default-rtdb.firebaseio.com",
+    "project_id": "smartdrive-b9b8e",
+    "storage_bucket": "smartdrive-b9b8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770943771707:android:ad13964768a471c720681e",
+        "android_client_info": {
+          "package_name": "com.example.smartdrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770943771707-t3lfcpj82ck85g4t433nge5u0hnfbbqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO48OBsuCNnRxhLsW3Bozob8ofXHFBVes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770943771707-t3lfcpj82ck85g4t433nge5u0hnfbbqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

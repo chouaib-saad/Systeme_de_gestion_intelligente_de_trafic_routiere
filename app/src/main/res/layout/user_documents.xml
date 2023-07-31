@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.page.frags.UserDocument">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:animateLayoutChanges="true"
+        android:visibility="invisible">
+
+
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/vos_documents"
+        android:textColor="@color/baseGreen"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/profession_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans"
+        app:layout_constraintTop_toBottomOf="@id/text_view_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:text="@string/votre_profession"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/green_settings"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+    android:id="@+id/profession"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/profession_title"
+    android:text=""
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    />
+
+
+
+    <TextView
+        android:id="@+id/desc_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/description_de_votre_profession"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@id/profession"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+    android:id="@+id/profDesc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc_title"
+        android:layout_marginTop="8dp"
+        android:text=""
+        />
+
+
+    <TextView
+        android:id="@+id/document"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/document"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@id/profDesc"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/document"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/imageDoc"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:ignore="contentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:animateLayoutChanges="true"
+        android:visibility="invisible">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/no_results_lottie"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="5dp"
+            app:lottie_loop="false"
+            app:lottie_speed="1"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/no_results"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/no_results_lottie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/pas_de_documents_disponibles"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_settings"
+        android:textSize="16sp"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

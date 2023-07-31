@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.page.frags.Home"
+    android:background="#fff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible">
+
+
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:weightSum="3"
+        android:padding="3dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0"
+            app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/userPicture"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/home_profileshape"
+            android:src="@drawable/default_picture"
+            android:scaleType="centerCrop"
+            tools:ignore="contentDescription" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green_settings"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/nom_utilisateur"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/vipBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vip_badge"
+            android:layout_weight="1"
+            tools:ignore="contentDescription"
+            android:layout_gravity="center_vertical|end"
+            app:tint="@color/base_grey" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profile_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/green_settings"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/bienvenue_dans" />
+
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="23sp"
+        android:textColor="@color/green_settings"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/smartdrive" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageSlider_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/mode_emploi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mode_emploi_desc"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/green_settings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/mode_d_emploi"/>
+
+
+    <TextView
+        android:id="@+id/mode_emploi_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="14sp"
+        android:textColor="@color/uncelected_slider_color"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/vous_pouvez_ouvrir_la_carte_pour_voir_le_plus_proche_feux_de_vous_n_vous_pouvez_activer_le_mode_d_urgence_si_vous_etes_un_utilisateur_160_160_special_n_vous_pouvez_afficher_et_voir_les_statistiques_de_congestion_du_160_160_trafic_a_partir_de_l_interface_de_statistiques_n_vous_pouvez_voir_le_nombre_de_voitures_sur_chaque_route_en_160_160_temps_reel_dans_le_systeme_de_feux_de_circulation_intelligents_via_160_160_l_interface_informations"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

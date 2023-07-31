@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.page.frags.TermesConditions"
+    android:background="#fff">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ScrollViewCount">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/parag_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conditions_d_utilisation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/baseGreen"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/aldrich"
+        />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_1_introduction"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/paragIntro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/les_pr_sentes_conditions_d_utilisation_r_gissent_l_utilisation_de_l_application_mobile_de_contr_le_de_feux_de_signalisation_intelligents_ci_apr_s_d_nomm_e_quot_smartdrive_quot_d_velopp_e_par_quot_quetratech_quot_nl_utilisation_de_l_application_implique_l_acceptation_de_ces_conditions_d_utilisation_dans_leur_int_gralit"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:typeface="sans"
+        app:layout_constraintTop_toBottomOf="@id/intro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"
+        tools:ignore="SmallSp" />
+
+
+    <TextView
+        android:id="@+id/UtilisationApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_2_utilisation_de_l_application"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/paragIntro"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/paragUtilisation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/l_utilisateur_reconna_t_que_l_application_est_destin_e_tre_utilis_e_exclusivement_des_fins_professionnelles_ou_pour_la_surveillance_de_la_circulation_ntoute_utilisation_non_autoris_e_de_l_application_est_interdite_nl_utilisateur_est_enti_rement_responsable_de_toutes_les_donn_es_qu_il_envoie_ou_re_oit_via_l_application_nl_utilisateur_doit_s_assurer_que_toutes_les_donn_es_transmises_via_l_application_sont_exactes_et_ne_violent_pas_les_droits_de_tiers"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:typeface="sans"
+        tools:ignore="SmallSp"
+        app:layout_constraintTop_toBottomOf="@id/UtilisationApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"
+        />
+
+    <TextView
+        android:id="@+id/PropIntellectuelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_3_propri_t_intellectuelle"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/paragUtilisation"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/paragPropIntellectuelle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/l_application_ainsi_que_tous_les_droits_de_propri_t_intellectuelle_y_aff_rents_demeurent_la_propri_t_exclusive_de_quot_quetratech_quot_nl_utilisateur_ne_dispose_d_aucun_droit_de_propri_t_intellectuelle_sur_l_application_nl_utilisateur_ne_peut_pas_reproduire_modifier_distribuer_ou_exploiter_de_quelque_mani_re_que_ce_soit_l_application_sans_l_autorisation_pr_alable_crite_de_quot_quetratech_quot"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:typeface="sans"
+        tools:ignore="SmallSp"
+        app:layout_constraintTop_toBottomOf="@id/PropIntellectuelle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"
+        />
+
+
+    <TextView
+        android:id="@+id/confProtection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_4_confidentialit_et_protection_des_donn_es"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/paragPropIntellectuelle"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/paragConfProtection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/l_utilisateur_reconna_t_que_l_application_collecte_des_donn_es_relatives_l_utilisation_de_l_application_notamment_des_informations_de_localisation_n_quot_quetratech_quot_respecte_la_l_gislation_applicable_en_mati_re_de_protection_des_donn_es_et_s_engage_traiter_ces_donn_es_conform_ment_sa_politique_de_confidentialit_nl_utilisateur_est_tenu_de_maintenir_la_confidentialit_de_ses_informations_de_connexion_et_de_prendre_toutes_les_mesures_raisonnables_pour_emp_cher_l_utilisation_non_autoris_e_de_l_application"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:typeface="sans"
+        tools:ignore="SmallSp"
+        app:layout_constraintTop_toBottomOf="@id/confProtection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"
+        />
+
+
+
+    <TextView
+        android:id="@+id/limitationResponsabilite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_5_limitation_de_responsabilit"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/paragConfProtection"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/paragLimitationResponsabilite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/l_utilisation_de_l_application_se_fait_aux_risques_et_p_rils_de_l_utilisateur_n_quot_quetratech_quot_ne_peut_tre_tenue_responsable_de_tout_dommage_r_sultant_de_l_utilisation_de_l_application_y_compris_sans_limitation_les_dommages_directs_ou_indirects_la_perte_de_profits_la_perte_de_donn_es_ou_toute_autre_perte_conomique"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:typeface="sans"
+        tools:ignore="SmallSp"
+        app:layout_constraintTop_toBottomOf="@id/limitationResponsabilite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"
+        />
+
+
+    <TextView
+        android:id="@+id/modificationsConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_6_modifications_des_conditions_d_utilisation"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/paragLimitationResponsabilite"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/paragModificationsConditions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/n_quot_quetratech_quot_se_r_serve_le_droit_de_modifier_les_pr_sentes_conditions_d_utilisation_tout_moment_et_sans_pr_avis_nl_utilisateur_est_tenu_de_consulter_r_guli_rement_les_conditions_d_utilisation_pour_prendre_connaissance_des_modifications_ventuelles"
+        android:textSize="11sp"
+        android:typeface="sans"
+        tools:ignore="SmallSp"
+        app:layout_constraintTop_toBottomOf="@id/modificationsConditions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"/>
+
+
+    <TextView
+        android:id="@+id/droitApplicable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/baseGreen"
+        android:text="@string/_7_droit_applicable_et_juridiction_comp_tente"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/paragModificationsConditions"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/paragDroitApplicable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_grey"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/les_pr_sentes_conditions_d_utilisation_sont_r_gies_par_le_droit_tunisien_ntout_litige_relatif_l_interpr_tation_ou_l_ex_cution_des_pr_sentes_conditions_d_utilisation_sera_port_devant_les_tribunaux_comp_tents_de_tunis"
+        android:typeface="sans"
+        app:layout_constraintTop_toBottomOf="@id/droitApplicable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/parag_guide"
+        tools:ignore="SmallSp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
